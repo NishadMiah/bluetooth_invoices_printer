@@ -37,9 +37,11 @@ dependencies:
   flutter_screenutil: ^5.9.3
   get: ^4.7.2
   google_fonts: ^6.3.2
-  bluetooth_print: ^4.3.0
+  # Bluetooth thermal printing
+  blue_thermal_printer: ^1.2.3
   intl: ^0.20.2
   permission_handler: ^12.0.1
+
 
 dev_dependencies:
   flutter_test:

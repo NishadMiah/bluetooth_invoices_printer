@@ -4,6 +4,7 @@ import 'package:bluetooth_invoices_printer/utils/app_colors/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,7 +24,15 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
           scaffoldBackgroundColor: AppColors.backgroundClr,
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
+          colorScheme: ColorScheme.fromSeed(
+            seedColor: AppColors.primary,
+            primary: AppColors.primary,
+            secondary: AppColors.secondary,
+            error: AppColors.error,
+            surface: AppColors.cardBackground,
+          ),
+          textTheme: GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme),
+          useMaterial3: true,
         ),
         defaultTransition: Transition.fadeIn,
         transitionDuration: const Duration(milliseconds: 200),
